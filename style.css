@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 24pt;
+}
+
+header p {
+    color: #7f8c8d;
+    font-size: 11pt;
+    line-height: 1.5;
+}
+
+/* Espacios de anuncios estratégicos */
+.ad-space {
+    background-color: #ffffff;
+    border: 1px dashed #bdc3c7;
+    margin: 20px 0;
+    padding: 10px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.ad-label {
+    font-size: 8pt;
+    color: #95a5a6;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.ad-placeholder {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #bdc3c7;
+    font-weight: bold;
+    font-size: 12pt;
+    background-color: #fafbfc;
+}
+
+/* Caja del convertidor */
+.converter-box {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.drop-zone {
+    border: 2px dashed #3498db;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #fec;
+    background-color: #f9fbfd;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+.drop-zone:hover, .drop-zone--over {
+    background-color: #ecf0f1;
+    border-color: #2980b9;
+}
+
+.drop-zone__prompt {
+    font-size: 12pt;
+    color: #555;
+}
+
+.browse-btn {
+    color: #3498db;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.drop-zone__input {
+    display: none;
+}
+
+/* Vista previa */
+.preview-container {
+    margin-top: 25px;
+    text-align: center;
+    border-top: 1px solid #ecf0f1;
+    padding-top: 20px;
+}
+
+.preview-container h3 {
+    margin-bottom: 10px;
+    font-size: 12pt;
+    color: #2c3e50;
+}
+
+#imagePreview {
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.file-info {
+    font-size: 10pt;
+    color: #7f8c8d;
+    margin-top: 8px;
+}
+
+/* Sección de controles */
+.controls-section {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.controls-section label {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+#formatSelect {
+    padding: 12px;
+    font-size: 11pt;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    background-color: #fff;
+    outline: none;
+}
+
+#convertBtn {
+    padding: 14px;
+    font-size: 12pt;
+    font-weight: bold;
+    color: white;
+    background-color: #2ecc71;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#convertBtn:hover {
+    background-color: #27ae60;
+}
+
+#convertBtn:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+/* Contenedor de descarga */
+.download-container {
+    margin-top: 25px;
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #ecf0f1;
+}
+
+.success-checkmark {
+    color: #2ecc71;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 12pt;
+    font-weight: bold;
+    color: white;
+    background-color: #3498db;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.2s;
+    box-shadow: 0 4px 6px rgba(52, 152, 219, 0.2);
+}
+
+.download-btn:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 9pt;
+    color: #bdc3c7;
+}

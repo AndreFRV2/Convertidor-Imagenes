@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de Imágenes Gratis - Rápido y Seguro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Convertidor de Imágenes</h1>
+            <p>Convierte tus fotos a JPG, PNG o WebP al instante. Gratis y 100% seguro (tus fotos no se suben a ningún servidor, se procesan en tu dispositivo).</p>
+        </header>
+
+        <!-- ESPACIO PARA ANUNCIO SUPERIOR -->
+        <div class="ad-space banner-top">
+            <p class="ad-label">Publicidad</p>
+            <!-- Aquí pegarás el código que te dé la plataforma de anuncios -->
+            <div class="ad-placeholder">Anuncio Recomendado</div>
+        </div>
+
+        <main class="converter-box">
+            <div class="drop-zone" id="dropZone">
+                <span class="drop-zone__prompt">Arrastra tu imagen aquí o <span class="browse-btn">selecciona un archivo</span></span>
+                <input type="file" id="fileInput" class="drop-zone__input" accept="image/*">
+            </div>
+
+            <div id="previewContainer" class="preview-container" style="display: none;">
+                <h3>Imagen seleccionada:</h3>
+                <img id="imagePreview" src="" alt="Vista previa">
+                <p id="fileInfo" class="file-info"></p>
+            </div>
+
+            <div class="controls-section">
+                <label for="formatSelect">Convertir a:</label>
+                <select id="formatSelect">
+                    <option value="image/jpeg">JPG</option>
+                    <option value="image/png">PNG</option>
+                    <option value="image/webp">WebP</option>
+                </select>
+
+                <button id="convertBtn" disabled>Convertir Imagen</button>
+            </div>
+
+            <div id="downloadContainer" class="download-container" style="display: none;">
+                <div class="success-checkmark">✓ ¡Conversión exitosa!</div>
+                <!-- ESPACIO PARA ANUNCIO DEBAJO DEL BOTÓN DE DESCARGA -->
+                <div class="ad-space banner-download">
+                    <p class="ad-label">Publicidad</p>
+                    <div class="ad-placeholder">Anuncio Relacionado</div>
+                </div>
+                <a id="downloadLink" class="download-btn" href="#" download="imagen_convertida">Descargar Imagen Convertida</a>
+            </div>
+        </main>
+
+        <!-- ESPACIO PARA ANUNCIO INFERIOR -->
+        <div class="ad-space banner-bottom">
+            <p class="ad-label">Publicidad</p>
+            <div class="ad-placeholder">Anuncio</div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Convertidor de Imágenes Online. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
